@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Organizer</title>
+    <link rel="stylesheet" href="event.css">
+    <script src="event.js" defer></script>
+</head>
+<body>
+    <header> 
+          <h1>To Do List</h1>
+    </header>
+    <main>
+    <div id="event-form">
+        <form id="add-event-form">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" required>
+
+            <label for="eventDate">Date:</label>
+            <input type="date" id="eventDate" required>
+
+            <label for="eventTime">Time:</label>
+            <input type="time" id="eventTime" required>
+
+            <label for="eventLocation">Location:</label>
+            <input type="text" id="eventLocation" required>
+
+            <label for="eventNotes">Notes:</label>
+            <textarea id="eventNotes"></textarea>
+
+            <button type="button" onclick="addEvent()">Add Event</button>
+        </form>
+    </div>
+
+    <div id="search-form">
+        <h2>Search Events</h2>
+        <form>
+            <label for="searchText">Search:</label>
+            <input type="text" id="searchText">
+            <button type="button" onclick="searchEvent()">Search</button>
+        </form>
+    </div>
+  </main>
+<main>
+    <div id="event-list">
+        <h2>Event List</h2>
+    </div>
+  </main>
+</body>
+</html>
